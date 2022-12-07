@@ -8,7 +8,11 @@
 -- FROM student as s
 -- WHERE s.second_surname is not null and s.email_personal like '%@gmail.com'
 
+<<<<<<< HEAD
 -- use proyectoFinal;
+=======
+-- use proyecto_final;
+>>>>>>> cec4f5d16908dc058ce930b051b9c635435fdb5b
 
 -- insert into user (email, password, role)
 -- values ('juan@host.com', 'mypass', 'user')
@@ -23,6 +27,7 @@
 
 -- delete from student where id = 6
 
+<<<<<<< HEAD
 select s.id, s.email_personal FROM user u inner join student s on s.email_personal = u.email where email = ? AND password = ?
 
 
@@ -34,3 +39,8 @@ select * from reward
 (select *, ROW_NUMBER() OVER (ORDER BY (SELECT 1)) as position from 
 (select r.id_user_rewarded, sum(r.xp_points) as all_xp_points, s.name, s.first_surname from reward as r inner join student as s on r.id_user_rewarded = s.id group by r.id_user_rewarded order by all_xp_points DESC) as SN1) as SN2
 where SN2.id_user_rewarded = 2;
+=======
+select *from user;
+
+
+>>>>>>> cec4f5d16908dc058ce930b051b9c635435fdb5b

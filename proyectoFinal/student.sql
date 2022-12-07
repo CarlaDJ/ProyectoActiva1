@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 use proyectoFinal;
 
 -- insert into student (name,first_surname, email_personal, email_activa, phone_number, description, city, zip_code)
@@ -31,3 +32,13 @@ select * FROM student;
 
 select r.id_user_rewarded, sum(r.xp_points) as all_xp_points, s.name, s.first_surname from reward as r inner join student as s on r.id_user_rewarded = s.id group by r.id_user_rewarded order by all_xp_points DESC limit 5
 -- order by date DESC
+=======
+use proyecto_final;
+
+insert into student (name, first_surname, email_personal, email_activa, phone_number,  description, city, zip_code)
+values ('pepe1', 'lope1z', 'pepe1@host.com', 'pepe@xarxatec.com','613645976', 'Programmer','Castellon', '12007');
+
+SELECT * FROM student;
+
+delete from student where id = 10
+>>>>>>> cec4f5d16908dc058ce930b051b9c635435fdb5b
